@@ -11,6 +11,7 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 header{
+    
     display: flex;
     height: 70px;
     width: 100%;
@@ -21,10 +22,12 @@ header{
     box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.57);
     color: white;
     z-index: 200;
+    position: absolute;
 }
 
 
 .list-style li, a{
+    
     display: inline;
     list-style-type: none;
     width: 20%;
@@ -39,13 +42,55 @@ header{
 }
 
 .icone{
+    
     text-align: right;
     width: 20%;
    
-
 }
 
 a{
 
     margin-right: 10px;
+
+}
+
+main{
+    
+    padding: 110px 15% 40px 15%;
+}
+
+.container{
+    margin: 0 -5px 0 -5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.prodotto{
+    
+    margin: 5px;
+    width: calc(100% /3 - 10px);
+
+   
+  
+
+}
+
+.prezzo-nuovo{
+
+    color: red;
+
+}
+
+.prezzo-vecchio{
+
+    text-decoration: line-through;
+
+}
+
+.immagine{
+
+    width: 100%;
+  
+
 }

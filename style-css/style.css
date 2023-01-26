@@ -6,12 +6,14 @@
 
 }
 
-body{
+body {
 
     font-family: 'Noto Sans', sans-serif;
 }
-header{
-    
+
+/* posizione header in cima con misure */
+header {
+
     display: flex;
     height: 70px;
     width: 100%;
@@ -22,12 +24,15 @@ header{
     box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.57);
     color: white;
     z-index: 200;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
+/* stile delle liste contenenti dei link  */
+.list-style li,
+a {
 
-.list-style li, a{
-    
     display: inline;
     list-style-type: none;
     width: 20%;
@@ -35,62 +40,156 @@ header{
     color: white;
 }
 
-
-#boolean{
+/* logo nell'header  */
+#boolean {
 
     height: 30px;
 }
 
-.icone{
-    
+/* icone nell'header nel blocco destro */
+.icone {
+
     text-align: right;
     width: 20%;
-   
+
 }
 
-a{
+/* margine dei link  */
+a {
 
     margin-right: 10px;
 
 }
 
-main{
-    
+/* padding del main  */
+main {
+
     padding: 110px 15% 40px 15%;
 }
 
-.container{
+/* container main  */
+.container {
     margin: 0 -5px 0 -5px;
     display: flex;
     flex-wrap: wrap;
-    
-    
+
+
 }
-.prodotto{
-    
-    margin: 5px;
+
+/* classe degli articoli */
+.prodotto {
+
+    margin: 5px 5px 30px 5px;
     width: calc(100% /3 - 10px);
+    position: relative;
 
-   
-  
+
 
 }
 
-.prezzo-nuovo{
+/* colore del testo del prezzo del prodotto  */
+.prezzo-nuovo {
 
     color: red;
 
 }
 
-.prezzo-vecchio{
+/* attributo del prezzo vecchio barrato  */
+.prezzo-vecchio {
 
     text-decoration: line-through;
 
 }
 
-.immagine{
+/* grandezza immagini */
+.immagine, .hover-immagine{
 
     width: 100%;
-  
+
+
+}
+
+/* padding etichetta col cuore in alto a destra delle immagini */
+.image .like {
+
+    
+    padding: 10px;
+}
+
+/* spaziatura etichette sconto e sostenibilità */
+.image .etichette {
+
+    padding: 5px;
+}
+
+/* colore e posizione  */
+.like {
+    top: 10px;
+    right: 0;
+    color: black;
+    background-color: white;
+    position: absolute;
+
+}
+
+/* posizione etichette rosse e verdi */
+.etichette {
+    bottom: 100px;
+    left: 5px;
+    position: absolute;
+}
+
+/* attributi etichette rosse */
+.sconto {
+    padding: 3px 10px;
+
+    background-color: red;
+    color: white;
+}
+
+/* attributi etichette verdi */
+.sostenibilita {
+
+    padding: 3px 10px;
+
+    background-color: green;
+    color: white;
+
+}
+
+/* proprietà e posizione footer */
+footer {
+
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    padding: 0 15%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.57);
+    color: white;
+    z-index: 200;
+
+
+}
+
+/* dimensione font delle informative nel footer  */
+footer .informative .list-style {
+
+    font-size: small;
+}
+
+.hover-immagine{
+
+    display: none;
+}
+.image .like:hover{
+    color: red;
+
+}
+.image:hover .immagine{
+
+
 
 }

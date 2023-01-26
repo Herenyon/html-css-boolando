@@ -102,7 +102,8 @@ main {
 }
 
 /* grandezza immagini */
-.immagine, .hover-immagine{
+.immagine,
+.hover-immagine {
 
     width: 100%;
 
@@ -112,7 +113,7 @@ main {
 /* padding etichetta col cuore in alto a destra delle immagini */
 .image .like {
 
-    
+
     padding: 10px;
 }
 
@@ -180,16 +181,25 @@ footer .informative .list-style {
     font-size: small;
 }
 
-.hover-immagine{
+/* cambi immagine con hover  */
+.hover-immagine {
 
     display: none;
 }
-.image .like:hover{
+
+.image .like:hover {
     color: red;
 
 }
-.image:hover .immagine{
 
+.image:hover .immagine {
 
+    display: none;
+
+}
+
+.image:hover .hover-immagine {
+
+    display: block;
 
 }
